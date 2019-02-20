@@ -22,8 +22,8 @@ import scala.util.{Failure, Success, Try}
 trait Node {
 
   implicit val system: ActorSystem
-  implicit val materializer: ActorMaterializer            = ActorMaterializer()
-  implicit val executionContext: ExecutionContextExecutor = system.dispatcher
+  implicit val materializer: ActorMaterializer
+  implicit val executionContext: ExecutionContextExecutor
 
   /**
     * Override to implement the routes that will be served by this http server.

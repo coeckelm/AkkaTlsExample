@@ -3,7 +3,7 @@ import akka.actor.{Actor, ActorLogging}
 import akka.cluster.Cluster
 import akka.cluster.ClusterEvent._
 
-class RoKCeTActor extends Actor with ActorLogging {
+class SampleActor extends Actor with ActorLogging {
 
   val cluster = Cluster(context.system)
 
